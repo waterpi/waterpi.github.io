@@ -1,0 +1,21 @@
+# Archivos de registro
+*.log
+
+# Directorio de dependencias de Node
+node_modules
+
+# Directorio de configuración de IDE (por ejemplo, VSCode)
+.vscode
+
+# Archivos de entorno
+.env
+
+# Archivos de caché
+.cache
+
+# Archivos de construcción/dist
+dist
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
