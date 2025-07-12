@@ -1,31 +1,846 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!-- saved from url=(0020)http://blanco.local/ -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas</title>
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" type="application/rss+xml" title="WaterPi » Feed" href="http://blanco.local/feed/">
+<link rel="alternate" type="application/rss+xml" title="WaterPi » Feed de los comentarios" href="http://blanco.local/comments/feed/">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blanco.local\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\ud83d\udd25","\ud83d\udc26\u200b\ud83d\udd25")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id="wp-emoji-styles-inline-css">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WaterPi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- if you want to use in local
-        <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
-</head>
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="front-estilos-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/estilos.css" media="all">
+<link rel="stylesheet" id="ctwg-shortcodes-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/style.css" media="all">
+<link rel="stylesheet" id="hello-elementor-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/style.min.css" media="all">
+<link rel="stylesheet" id="hello-elementor-theme-style-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/theme.min.css" media="all">
+<link rel="stylesheet" id="hello-elementor-header-footer-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/header-footer.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/elementor-icons.min.css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/frontend.min.css" media="all">
+<link rel="stylesheet" id="swiper-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/swiper.min.css" media="all">
+<link rel="stylesheet" id="e-swiper-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/e-swiper.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-723-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/post-723.css" media="all">
+<link rel="stylesheet" id="font-awesome-5-all-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/all.min.css" media="all">
+<link rel="stylesheet" id="font-awesome-4-shim-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/v4-shims.min.css" media="all">
+<link rel="stylesheet" id="widget-image-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/widget-image.min.css" media="all">
+<link rel="stylesheet" id="widget-text-editor-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/widget-text-editor.min.css" media="all">
+<link rel="stylesheet" id="widget-heading-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/widget-heading.min.css" media="all">
+<link rel="stylesheet" id="e-animation-pulse-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/e-animation-pulse.min.css" media="all">
+<link rel="stylesheet" id="widget-icon-box-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/widget-icon-box.min.css" media="all">
+<link rel="stylesheet" id="widget-divider-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/widget-divider.min.css" media="all">
+<link rel="stylesheet" id="e-animation-fadeInLeft-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/fadeInLeft.min.css" media="all">
+<link rel="stylesheet" id="e-animation-hang-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/e-animation-hang.min.css" media="all">
+<link rel="stylesheet" id="e-animation-fadeInUp-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/fadeInUp.min.css" media="all">
+<link rel="stylesheet" id="e-animation-fadeInRight-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/fadeInRight.min.css" media="all">
+<link rel="stylesheet" id="e-animation-zoomIn-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/zoomIn.min.css" media="all">
+<link rel="stylesheet" id="e-animation-wobble-vertical-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/e-animation-wobble-vertical.min.css" media="all">
+<link rel="stylesheet" id="widget-testimonial-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/widget-testimonial.min.css" media="all">
+<link rel="stylesheet" id="e-animation-rotate-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/e-animation-rotate.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-6-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/post-6.css" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/css" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/fontawesome.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/regular.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/solid.min.css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-brands-css" href="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/brands.min.css" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">        <script>
+            /* <![CDATA[ */
+            var rcewpp = {
+                "ajax_url":"http://blanco.local/wp-admin/admin-ajax.php",
+                "nonce": "ade9a9f667",
+                "home_url": "http://blanco.local/",
+                "settings_icon": 'http://blanco.local/wp-content/plugins/export-wp-page-to-static-html/admin/images/settings.png',
+                "settings_hover_icon": 'http://blanco.local/wp-content/plugins/export-wp-page-to-static-html/admin/images/settings_hover.png'
+            };
+            /* ]]\> */
+        </script>
+        <script src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/jquery.min.js.download" id="jquery-core-js"></script>
+<script src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<script id="front-principal-js-extra">
+var cdp_cookies_info = {"url_plugin":"http:\/\/blanco.local\/wp-content\/plugins\/asesor-cookies-para-la-ley-en-espana\/plugin.php","url_admin_ajax":"http:\/\/blanco.local\/wp-admin\/admin-ajax.php"};
+</script>
+<script src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/principal.js.download" id="front-principal-js"></script>
+<script src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/v4-shims.min.js.download" id="font-awesome-4-shim-js"></script>
+<link rel="https://api.w.org/" href="http://blanco.local/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="http://blanco.local/wp-json/wp/v2/pages/6"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blanco.local/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.1">
+<link rel="canonical" href="http://blanco.local/">
+<link rel="shortlink" href="http://blanco.local/">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="http://blanco.local/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblanco.local%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="http://blanco.local/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblanco.local%2F&amp;format=xml">
+<style>.post-thumbnail img[src$='.svg'] { width: 100%; height: auto; }</style><meta name="generator" content="Elementor 3.24.3; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="http://blanco.local/wp-content/uploads/2017/12/cropped-logo150x48-32x32.png" sizes="32x32">
+<link rel="icon" href="http://blanco.local/wp-content/uploads/2017/12/cropped-logo150x48-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="http://blanco.local/wp-content/uploads/2017/12/cropped-logo150x48-180x180.png">
+<meta name="msapplication-TileImage" content="http://blanco.local/wp-content/uploads/2017/12/cropped-logo150x48-270x270.png">
+<style id="kirki-inline-styles"></style><script src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/wp-emoji-release.min.js.download" defer=""></script></head>
+<body class="home wp-singular page-template-default page page-id-6 wp-custom-logo wp-theme-hello-elementor elementor-default elementor-kit-723 elementor-page elementor-page-6 e--ua-isTouchDevice e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop">
 
-<body>
-    <h1>Hello, water pi!</h1>
 
-    <!-- SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <!-- Optional -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-    <!-- Optional -->
-</body>
+<a class="skip-link screen-reader-text" href="http://blanco.local/#content">Ir al contenido</a>
 
-</html>
+
+<header id="site-header" class="site-header">
+
+	<div class="site-branding">
+		<a href="http://blanco.local/" class="custom-logo-link" rel="home" aria-current="page"><img src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/WaterPi_blue.svg" class="custom-logo" alt="WaterPi" decoding="async"></a>	</div>
+
+			<nav class="site-navigation" aria-label="Menú principal">
+			<ul id="menu-menu" class="menu"><li id="menu-item-584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-584"><a href="http://blanco.local/" aria-current="page">Home</a></li>
+<li id="menu-item-401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-401"><a href="http://blanco.local/empresa/">Empresa</a>
+<ul class="sub-menu">
+	<li id="menu-item-556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-556"><a href="http://blanco.local/nosotros/">Nosotros</a></li>
+	<li id="menu-item-649" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-649"><a href="http://blanco.local/servicios/">Servicios</a></li>
+	<li id="menu-item-582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-582"><a href="http://blanco.local/herramientas/">Herramientas</a></li>
+	<li id="menu-item-546" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-546"><a href="http://blanco.local/investigacion/">Investigación</a></li>
+	<li id="menu-item-547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-547"><a href="http://blanco.local/portfolio/">Portfolio</a></li>
+	<li id="menu-item-557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-557"><a href="http://blanco.local/subvenciones/">Subvenciones</a></li>
+</ul>
+</li>
+<li id="menu-item-471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-471"><a href="http://blanco.local/contacto/">Contacto</a></li>
+</ul>		</nav>
+	</header>
+
+<main id="content" class="site-main post-6 page type-page status-publish hentry">
+
+	
+	<div class="page-content">
+				<div data-elementor-type="wp-post" data-elementor-id="6" class="elementor elementor-6">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-3e05644b elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="3e05644b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1dd83591" data-id="1dd83591" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6f0bb7e elementor-widget elementor-widget-image" data-id="6f0bb7e" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img fetchpriority="high" decoding="async" width="1549" height="495" src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/White.png" class="attachment-full size-full wp-image-517" alt="" srcset="http://blanco.local/wp-content/uploads/2018/11/White.png 1549w, http://blanco.local/wp-content/uploads/2018/11/White-300x96.png 300w, http://blanco.local/wp-content/uploads/2018/11/White-768x245.png 768w, http://blanco.local/wp-content/uploads/2018/11/White-1024x327.png 1024w, http://blanco.local/wp-content/uploads/2018/11/White-720x230.png 720w" sizes="(max-width: 1549px) 100vw, 1549px">													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-34b2e135" data-id="34b2e135" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7b3e4d94 elementor-widget elementor-widget-text-editor" data-id="7b3e4d94" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Consultoría técnica de Recursos Hídricos y Medioambiente. Especializados en la modelación y el desarrollo de software.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-7fd5b0cf elementor-widget elementor-widget-heading" data-id="7fd5b0cf" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">¡Conócenos!</h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7ded08b8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7ded08b8" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5eb4ba7f" data-id="5eb4ba7f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-bc177cd elementor-widget elementor-widget-button" data-id="bc177cd" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="http://blanco.local/empresa/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Empresa</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5d51e432" data-id="5d51e432" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-bef67cd elementor-widget elementor-widget-button" data-id="bef67cd" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="http://blanco.local/contacto/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">contacto</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9e2762a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9e2762a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-49a6abc9" data-id="49a6abc9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-337d7b48 elementor-widget elementor-widget-heading" data-id="337d7b48" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Conozca nuestro trabajo</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-bb9c6ca elementor-widget elementor-widget-text-editor" data-id="bb9c6ca" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Ofrecemos una gran cantidad de servicios orientados en el ámbito de la ingeniería y la gestión de los Recursos Hídricos. Realizamos proyectos de consutoría técnica y estamos especializados en el desarrollo de software.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-1ff437ea elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="1ff437ea" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="http://blanco.local/portfolio/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Conozca más</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-54cf886f" data-id="54cf886f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-772014a7 elementor-position-left elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="772014a7" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-pulse">
+				<i class="fa fa-check-circle-o" aria-hidden="true"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Nuestro compromiso						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Queremos ofrecerte un servicio de rápido y de calidad que se ajuste a tus necesidades.					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-58112be1 elementor-position-left elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="58112be1" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-pulse">
+				<i class="fa fa-pencil-square-o" aria-hidden="true"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Metodología y eficiencia						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Nos basamos en un primer análisis de partida en el que evaluamos las necesidades de la empresa para así proceder a elaborar el proyecto técnico.					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-73cd8380 elementor-position-left elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="73cd8380" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-pulse">
+				<i class="fa fa-volume-control-phone" aria-hidden="true"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							Asesoramiento directo						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						En nosotros encontrarás cercanía y una gran disponibilidad. Para nosotros, una buena atención al cliente es uno de los pilares de cualquier negocio, por eso predicamos con el ejemplo.					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7c20eb52 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7c20eb52" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3355ea24" data-id="3355ea24" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a23c039 elementor-widget elementor-widget-heading" data-id="a23c039" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Nuestros servicios</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3bff0191 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="3bff0191" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-6987511d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6987511d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-narrow">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-49436edd" data-id="49436edd" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1b8c640b elementor-view-framed elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box animated fadeInLeft" data-id="1b8c640b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<a href="http://blanco.local/servicios/" class="elementor-icon elementor-animation-hang" tabindex="-1">
+				<i aria-hidden="true" class="fas fa-chart-pie"></i>				</a>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<a href="http://blanco.local/servicios/">
+							Planificación de Recursos Hídricos						</a>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Modelos de gestión
+Modelos de calidad de aguas<br>Modelos Precipitación-Escorrentía<br>(AQUATOOL)					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-58569b53" data-id="58569b53" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4c9c32e5 elementor-view-framed elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box animated fadeInUp" data-id="4c9c32e5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<a href="http://blanco.local/servicios/" class="elementor-icon elementor-animation-hang" tabindex="-1">
+				<i class="fa fa-area-chart" aria-hidden="true"></i>				</a>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<a href="http://blanco.local/servicios/">
+							Abastecimientos urbanos						</a>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Desarrollo y análisis de modelos (Epanet-QGISRed)<br><br><br><br>					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7ee7dadf" data-id="7ee7dadf" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5c08a1ec elementor-view-framed elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box animated fadeInUp" data-id="5c08a1ec" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<a href="http://blanco.local/servicios/" class="elementor-icon elementor-animation-hang" tabindex="-1">
+				<i class="fa fa-code" aria-hidden="true"></i>				</a>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<a href="http://blanco.local/servicios/">
+							Programación en vb.net, c# o Python						</a>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Aplicaciones de escritorio (Ej: AQUATOOL, RS MINERVE)<br>Plugins de QGis (Ej: QGISRed)<br><br>					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-5e48b5c0" data-id="5e48b5c0" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-32fad1ea elementor-view-framed elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box animated fadeInRight" data-id="32fad1ea" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<a href="http://blanco.local/servicios/" class="elementor-icon elementor-animation-hang" tabindex="-1">
+				<i class="fa fa-file-excel-o" aria-hidden="true"></i>				</a>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<a href="http://blanco.local/servicios/">
+							Desarrollo de hojas de cálculo​						</a>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Hojas complejas con MS Excel y código en VBA<br><br><br><br><br>					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ee3c864 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ee3c864" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5e8ca1a" data-id="5e8ca1a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-983d07a elementor-widget elementor-widget-heading" data-id="983d07a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">EQUIPO</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3ee15df elementor-widget elementor-widget-text-editor" data-id="3ee15df" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Las personas que estamos detrás de WaterPi.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-0f496b1 elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="0f496b1" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="http://blanco.local/nosotros/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Nosotros</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-faadc55" data-id="faadc55" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1ec56e3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1ec56e3" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-caf049c" data-id="caf049c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1a7c24d elementor-widget elementor-widget-heading" data-id="1a7c24d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Investigación</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9018ca8 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="9018ca8" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-48dc78f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="48dc78f" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-37047a8" data-id="37047a8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8b23ccb elementor-view-stacked elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box animated zoomIn" data-id="8b23ccb" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<a href="http://blanco.local/investigacion/" class="elementor-icon elementor-animation-wobble-vertical" tabindex="-1">
+				<i class="fa fa-book" aria-hidden="true"></i>				</a>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<a href="http://blanco.local/investigacion/">
+							PUBLICACIONES						</a>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Artículos en revistas cientificas sobre los proyectos en los que hemos participado.					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c7d8ec2" data-id="c7d8ec2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-179d07b elementor-view-stacked elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box animated zoomIn" data-id="179d07b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<a href="http://blanco.local/investigacion/" class="elementor-icon elementor-animation-wobble-vertical" tabindex="-1">
+				<i class="fa fa-connectdevelop" aria-hidden="true"></i>				</a>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<a href="http://blanco.local/investigacion/">
+							CONGRESOS						</a>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Congresos nacionales e internacionales de investigación.<br><br>					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-99ba022" data-id="99ba022" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9191ecf elementor-view-stacked elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box animated zoomIn" data-id="9191ecf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;}" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<a href="http://blanco.local/investigacion/" class="elementor-icon elementor-animation-wobble-vertical" tabindex="-1">
+				<i class="fa fa-coffee" aria-hidden="true"></i>				</a>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<a href="http://blanco.local/investigacion/">
+							CURSOS						</a>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Cursos formativos impartidos.<br><br>
+
+<br>					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-74e4dd30 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="74e4dd30" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2339ab9d" data-id="2339ab9d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e787522 elementor-widget elementor-widget-heading" data-id="e787522" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Nuestros clientes</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f343ebd elementor-view-default elementor-widget elementor-widget-icon" data-id="f343ebd" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+							<i class="fa fa-share-alt" aria-hidden="true"></i>
+						</div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-bc0e90d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bc0e90d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-extended">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b990a82 atu-hc-testimonial" data-id="b990a82" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b8be91f elementor-widget elementor-widget-testimonial" data-id="b8be91f" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">El Instituto Universitario de Investigación de Ingeniería del Agua y Medio Ambiente tiene el objetivo de impulsar la investigación científica y técnica así como promover la docencia especializada y el asesoramiento técnico en todos aquellos temas relacionados con el agua.<br></div>
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img decoding="async" width="535" height="400" src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/3.IIAMA_.png" class="attachment-full size-full wp-image-522" alt="" srcset="http://blanco.local/wp-content/uploads/2018/11/3.IIAMA_.png 535w, http://blanco.local/wp-content/uploads/2018/11/3.IIAMA_-300x224.png 300w" sizes="(max-width: 535px) 100vw, 535px">						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">IIAMA</div>
+																						<div class="elementor-testimonial-job">Instituto de Ingeniería del Agua y Medio Ambiente</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-e449714 atu-hc-testimonial" data-id="e449714" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-950c608 elementor-widget elementor-widget-testimonial" data-id="950c608" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">AQUATOOL es un entorno de desarrollo de sistemas de soporte a la decisión (SSD) para planificación y gestión de cuencas o de sistemas de recursos hídricos. Como SSD proporciona recursos para ayudar al análisis de diversos problemas relacionados con la gestión del agua.</div>
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img decoding="async" src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/Aquatool_logo-1.svg" title="Aquatool_logo" alt="Aquatool_logo" loading="lazy">						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">AQUATOOL</div>
+																						<div class="elementor-testimonial-job">Departamento de Recursos Hídricos</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7849255 atu-hc-testimonial" data-id="7849255" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9763e97 elementor-widget elementor-widget-testimonial" data-id="9763e97" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">CREALP lleva a cabo proyectos de investigación aplicada en el campo de las ciencias orientados principalmente a cuestiones de monitoreo ambiental y peligros naturales, así como en el desarrollo de recursos naturales.<br><br></div>
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img decoding="async" src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/Crealp_logo.svg" class="attachment-full size-full wp-image-530" alt="">						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">CREALP</div>
+																						<div class="elementor-testimonial-job">Centre de recherche sur l'environnement alpin</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7eb1069 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7eb1069" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d8414cd" data-id="d8414cd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f9a3f0c elementor-widget elementor-widget-heading" data-id="f9a3f0c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Nuestros valores</h2>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f20f755 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f20f755" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-wider">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f912bcb" data-id="f912bcb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0b1267f elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="0b1267f" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-hang">
+				<i class="fa fa-flag" aria-hidden="true"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							<span style="text-align: left;">Misión</span>						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						<span style="text-align: left;">Realizar proyectos de ingeniería en el campo de los Recursos Hídricos y Medio Ambiente mediante el desarrollo de herramientas.</span>					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-053d8a1" data-id="053d8a1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8e3b232 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="8e3b232" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-pulse">
+				<i class="fa fa-eye" aria-hidden="true"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							<span style="text-align: left;">Visión</span>						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						<span style="text-align: left;">Proporcionar el soporte necesario para la optimización de los Recursos Hídricos y, de este modo, ayudar a mejorar el Medio Ambiente. </span>					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7ac4425" data-id="7ac4425" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d020cdc elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="d020cdc" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-rotate">
+				<i class="fa fa-graduation-cap" aria-hidden="true"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							<span style="text-align: left;">Filosofía</span>						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						<span style="text-align: left;">Ofrecer un servicio de calidad que se ajuste a las necesidades de cada cliente.</span><span style="text-align: left;"></span>					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+		
+			</div>
+
+	
+</main>
+
+	<footer id="site-footer" class="site-footer">
+	</footer>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hello-elementor\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<!-- HTML del pié de página -->
+<div class="cdp-cookies-alerta  cdp-solapa-ocultar cdp-cookies-tema-blanco">
+	<div class="cdp-cookies-texto cdp-ocultar">
+		<p style="font-size:12px !important;line-height:12px !important">Este sitio web utiliza cookies para que usted tenga la mejor experiencia de usuario. Si continúa navegando está dando su consentimiento para la aceptación de las mencionadas cookies y la aceptación de nuestra <a href="http://blanco.local/wp/?page_id=214" style="font-size:12px !important;line-height:12px !important">política de cookies</a>, pinche el enlace para mayor información.</p>
+		<a href="javascript:;" class="cdp-cookies-boton-cerrar">ACEPTAR</a> 
+	</div>
+	<a class="cdp-cookies-solapa cdp-mostrar">Aviso de cookies</a>
+</div>
+ 			<script type="text/javascript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/webpack.runtime.min.js.download" id="elementor-webpack-runtime-js"></script>
+<script src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/frontend-modules.min.js.download" id="elementor-frontend-modules-js"></script>
+<script src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/core.min.js.download" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Pinear","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir v\u00eddeo","previous":"Anterior","next":"Siguiente","close":"Cerrar","a11yCarouselWrapperAriaLabel":"Carrusel | Scroll horizontal: Flecha izquierda y derecha","a11yCarouselPrevSlideMessage":"Diapositiva anterior","a11yCarouselNextSlideMessage":"Diapositiva siguiente","a11yCarouselFirstSlideMessage":"Esta es la primera diapositiva","a11yCarouselLastSlideMessage":"Esta es la \u00faltima diapositiva","a11yCarouselPaginationBulletMessage":"Ir a la diapositiva"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"M\u00f3vil vertical","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"M\u00f3vil horizontal","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tableta vertical","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tableta horizontal","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e1til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.24.3","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_onboarding":true,"home_screen":true,"ai-layout":true,"landing-pages":true,"link-in-bio":true,"floating-buttons":true},"urls":{"assets":"http:\/\/blanco.local\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"http:\/\/blanco.local\/wp-admin\/admin-ajax.php"},"nonces":{"floatingButtonsClickTracking":"03e6a718aa"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":6,"title":"WaterPi%20%E2%80%93%20Consultor%C3%ADa%20de%20Recursos%20H%C3%ADdricos%20%E2%80%93%20Desarrollo%20de%20aplicaciones%20inform%C3%A1ticas","excerpt":"","featuredImage":false}};
+</script>
+<script src="./WaterPi – Consultoría de Recursos Hídricos – Desarrollo de aplicaciones informáticas_files/frontend.min.js.download" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+
+
+
+<div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"><template shadowrootmode="open"><div class="glasp-extension" style="font-family: Inter;"></div></template></div><div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><template shadowrootmode="open"><div class="glasp-extension" style="font-family: Inter;"></div></template></div></body></html>
