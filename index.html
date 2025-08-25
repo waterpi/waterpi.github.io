@@ -84,12 +84,42 @@
       backdrop-filter: blur(6px);
     }
 
-    .brand {
+    .brand-vertical {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: .75rem;
-      margin-bottom: 1.25rem;
+      text-align: center;
+      gap: 1rem;
+      /* espacio entre logo y texto */
     }
+
+    .brand-vertical .logo {
+      width: clamp(60px, 15vw, 120px);
+      /* tamaño adaptable */
+      height: clamp(60px, 15vw, 120px);
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      padding: 1rem;
+
+    }
+
+    .brand-vertical .logo svg {
+      width: 200%;
+      height: 200%;
+    }
+
+    .brand-vertical h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      margin: 0;
+    }
+
+    .brand-vertical p {
+      line-height: 1.6;
+      margin: 0;
+      color: var(--muted);
+    }
+
 
     .logo {
       width: 440px;
@@ -236,7 +266,7 @@
   <main class="card" role="main" aria-labelledby="title">
     <div class="bg-ornament" aria-hidden="true"></div>
 
-    <div class="brand">
+    <div class="brand-vertical">
       <div class="logo" aria-hidden="true">
         <!-- Simple water drop mark -->
         <svg width="59.485mm" height="19.008mm" version="1.1" viewBox="0 0 59.485 19.008"
@@ -294,10 +324,10 @@
         </svg>
 
       </div>
-      <div>
-        <h1 id="title">Waterpi está en mantenimiento</h1>
-        <p>Estamos realizando mejoras para servirte mejor. <strong>Disculpen las molestias.</strong></p>
-      </div>
+
+      <h1 id="title">Waterpi está en mantenimiento</h1>
+      <p>Estamos realizando mejoras para servirte mejor. <strong>Disculpen las molestias.</strong></p>
+
     </div>
 
     <div class="status" aria-live="polite">
