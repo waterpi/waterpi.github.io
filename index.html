@@ -268,7 +268,6 @@
 
     <div class="brand-vertical">
       <div class="logo" aria-hidden="true">
-        <!-- Simple water drop mark -->
         <svg width="59.485mm" height="19.008mm" version="1.1" viewBox="0 0 59.485 19.008"
           xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#"
           xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -364,7 +363,6 @@
   </main>
 
   <script>
-    // Actualiza el año y marca temporal
     const yearEl = document.getElementById('year');
     const tsEl = document.getElementById('timestamp');
     const statusText = document.getElementById('status-text');
@@ -378,12 +376,12 @@
     updateTime();
     setInterval(updateTime, 60 * 1000);
 
-    // Cambia el mensaje de estado cada pocos segundos para dar dinamismo
+    
     const messages = [
-      'Actualizando servicios…',
-      'Optimizando rendimiento…',
-      'Aplicando mejoras…',
-      'Reiniciando componentes…'
+      'Calibrando modelo…',
+      'Optimizando recursos…',
+      'Analizando situación hídrica…',
+      'Desarollando herramientas...'
     ];
     let i = 0;
     setInterval(() => {
@@ -391,7 +389,6 @@
       statusText.textContent = messages[i];
     }, 3500);
 
-    // Copiado al portapapeles del email
     const copyBtn = document.getElementById('copy-email');
     copyBtn.addEventListener('click', async () => {
       try {
