@@ -51,7 +51,7 @@ export const Navbar = () => {
                             <Link key={link.name} to={link.href} onClick={(e) => handleNavClick(e, link.href)}>{link.name}</Link>
                         )
                     ))}
-                    <a href="#contact" className="base-btn primary-btn" style={{ padding: '0.6rem 1.2rem' }}>
+                    <a href="#contact" className="base-btn primary-btn" style={{ padding: '0.6rem 1.2rem', background: '#06b6d4', color: 'white'  }}>
                         Hablemos
                     </a>
                 </div>
@@ -82,7 +82,7 @@ export const Navbar = () => {
                                     {link.name}
                                 </Link>
                             ))}
-                            <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="base-btn primary-btn">
+                            <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="base-btn primary-btn" style={{ background: '#06b6d4', color: 'white' }}>
                                 Contactar
                             </a>
                         </nav>

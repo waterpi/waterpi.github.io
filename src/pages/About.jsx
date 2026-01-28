@@ -28,14 +28,7 @@ export const About = () => {
                             <div className="icon-box"><History /></div>
                             <h3>Nuestra Historia</h3>
                             <p style={{ color: '#94a3b8', marginTop: '1rem' }}>
-                                Constituida en 2010, WaterPi surge de la unión de cuatro ingenieros de caminos apasionados por la hidráulica. Tras años colaborando en proyectos de investigación, decidimos crear una estructura que nos permitiera transferir ese conocimiento a la sociedad.
-                            </p>
-                        </div>
-                        <div className="card">
-                            <div className="icon-box"><Users /></div>
-                            <h3>Equipo Multidisciplinar</h3>
-                            <p style={{ color: '#94a3b8', marginTop: '1rem' }}>
-                                Nuestro equipo combina perfiles de ingeniería civil, informática y ciencias ambientales. Esta diversidad nos permite abordar problemas complejos desde una perspectiva integral, desarrollando soluciones que van desde el modelado físico hasta el software avanzado.
+                                Constituida en 2018, WaterPi surge de la unión de dos ingenieros de caminos apasionados por la hidráulica. Tras años colaborando en proyectos de investigación, decidimos crear una estructura que nos permitiera transferir ese conocimiento a la sociedad.
                             </p>
                         </div>
                         <div className="card">
@@ -51,11 +44,37 @@ export const About = () => {
 
             <section className="section">
                 <div className="container">
+                    <h2 style={{ fontSize: '2.5rem', marginBottom: '2.5rem', textAlign: 'center' }}>Nuestro Equipo</h2>
+                    <div className="grid-2" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '6rem' }}>
+                        <div style={{ textAlign: 'center' }}>
+                            <img src="/assets/edgar.jpg" alt="Edgar Belda" style={{ width: '180px', height: '180px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1.5rem' }} />
+                            <h3 style={{ fontSize: '1.8rem', color: 'var(--accent)', marginBottom: '0.5rem' }}>Edgar Belda</h3>
+                            <p style={{ color: '#17c7d2', fontStyle: 'italic', marginBottom: '1rem' }}>Socio Fundador</p>
+                            <p style={{ marginBottom: '0.5rem' }}>Ingeniero de Caminos Canales y Puertos</p>
+                            <p style={{ marginBottom: '0.5rem' }}>Máster en Ingeniería Hidráulica y Medio Ambiente</p>
+                            <p style={{ marginBottom: '0.5rem' }}>Estudiante de Doctorado en Ingeniería del Agua y Medioambiental</p>
+                            <p>Especialista en calidad de aguas, diseñador y programador</p>
+                        </div>
+                        <div style={{ textAlign: 'center' }}>
+                            <img src="/assets/nestor.jpg" alt="Néstor Lerma" style={{ width: '180px', height: '180px', borderRadius: '50%', objectFit: 'contain', padding: '10px', marginBottom: '1.5rem', marginTop: '2rem' }} />
+                            <h3 style={{ fontSize: '1.8rem', color: 'var(--accent)', marginBottom: '0.5rem' }}>Néstor Lerma</h3>
+                            <p style={{ color: '#17c7d2', fontStyle: 'italic', marginBottom: '1rem' }}>Socio Fundador</p>
+                            <p style={{ marginBottom: '0.5rem' }}>Ingeniero de Caminos Canales y Puertos</p>
+                            <p style={{ marginBottom: '0.5rem' }}>Máster en Ingeniería Hidráulica y Medio Ambiente</p>
+                            <p style={{ marginBottom: '0.5rem' }}>Doctor en Ingeniería del Agua y Medioambiental</p>
+                            <p>Especialista en programación, hojas de cálculo y calibración de modelos</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="section">
+                <div className="container">
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
                         <div>
-                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Más de una década de experiencia</h2>
+                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>8 años de experiencia desde 2018</h2>
                             <p style={{ color: '#94a3b8', fontSize: '1.1rem', marginBottom: '1.5rem' }}>
-                                A lo largo de estos 15 años, hemos participado en más de 50 proyectos de alto nivel, colaborando con administraciones públicas, grandes consultoras y centros de investigación como el IIAMA.
+                                A lo largo de estos años, hemos participado en multitud de proyectos de alto nivel, colaborando con administraciones públicas, grandes consultoras y centros de investigación como el IIAMA.
                             </p>
                             <p style={{ color: '#94a3b8', fontSize: '1.1rem' }}>
                                 Nuestra especialización en herramientas como AQUATOOL, EPANET y SWMM nos ha convertido en un socio tecnológico de referencia en el sector del agua en España.
@@ -63,7 +82,7 @@ export const About = () => {
                         </div>
                         <div className="card" style={{ padding: '3rem', textAlign: 'center', border: '1px solid var(--accent)' }}>
                             <Award size={48} className="text-cyan" style={{ marginBottom: '1.5rem' }} />
-                            <div style={{ fontSize: '3rem', fontWeight: '800', color: 'white' }}>+15</div>
+                            <div style={{ fontSize: '3rem', fontWeight: '800', color: 'white' }}>+8</div>
                             <div style={{ textTransform: 'uppercase', letterSpacing: '2px', color: '#64748b', fontWeight: 'bold' }}>Años Innovando</div>
                         </div>
                     </div>

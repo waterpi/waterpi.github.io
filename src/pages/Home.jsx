@@ -161,23 +161,10 @@ const Research = () => (
                     </div>
                 </div>
                 <div>
-                    <div className="card" style={{ padding: '3rem', borderLeft: '4px solid var(--accent)', marginBottom: '2rem' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-                            <CloudRain size={32} className="text-cyan" />
-                            <div>
-                                <h3 style={{ margin: 0, fontSize: '1.25rem' }}>Colaboración con Qatium</h3>
-                                <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--accent)' }}>Partner Tecnológico</span>
-                            </div>
-                        </div>
-                        <p style={{ color: '#94a3b8', fontSize: '1rem', lineHeight: '1.6' }}>
-                            WaterPi forma parte del ecosistema de desarrollo de <strong>Qatium</strong>, la plataforma de gestión abierta del agua. Aportamos nuestro conocimiento en modelización hidráulica para mejorar la toma de decisiones basada en datos.
-                        </p>
-                    </div>
-
                     <div className="card" style={{ padding: '2rem' }}>
-                        <h3 className="mb-4" style={{ fontSize: '1.25rem' }}>Otros Proyectos Destacados</h3>
+                        <h3 className="mb-4" style={{ fontSize: '1.25rem' }}>Proyectos Destacados</h3>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                            {projects.filter(p => p.name !== 'Qatium').map((p, i) => (
+                            {projects.map((p, i) => (
                                 <div key={i} style={{ padding: '1rem', background: '#020617', borderRadius: '0.75rem', border: '1px solid var(--border)' }}>
                                     <div style={{ fontWeight: 'bold', color: 'white', fontSize: '0.9rem' }}>{p.name}</div>
                                     <div style={{ fontSize: '0.75rem', color: '#64748b' }}>{p.role}</div>
@@ -212,7 +199,7 @@ const Contact = () => (
                     Estamos listos para tu próximo reto técnico.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
-                    <a href="mailto:info@waterpi.com" className="base-btn primary-btn" style={{ fontSize: '1.1rem', padding: '1rem 3rem' }}>
+                    <a href="mailto:info@waterpi.com" className="base-btn primary-btn" style={{ fontSize: '1.1rem', padding: '1rem 3rem', background: '#06b6d4', color: 'white'  }}>
                         <Mail size={22} style={{ marginRight: '0.5rem' }} />
                         info@waterpi.com
                     </a>
