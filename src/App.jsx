@@ -325,6 +325,28 @@ const Footer = () => (
 );
 
 export default function App() {
+  const [isMaintenance, setIsMaintenance] = useState(true);
+
+  useEffect(() => {
+    // Feature Flag Logic
+    const params = new URLSearchParams(window.location.search);
+    const previewMode = params.get('preview') === 'true';
+    const storedPreview = localStorage.getItem('waterpi_preview') === 'true';
+
+    // Enable preview mode if URL param is present or cookie exists
+    if (previewMode) {
+      localStorage.setItem('waterpi_preview', 'true');
+      setIsMaintenance(false);
+    } else if (storedPreview) {
+      setIsMaintenance(false);
+    }
+    // Otherwise, it stays true (maintenance)
+  }, []);
+
+  if (isMaintenance) {
+    return <MaintenanceMode />;
+  }
+
   return (
     <div className="app-container" style={{ background: '#020617' }}>
       <Navbar />
