@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="33.94323mm"
+   height="33.94323mm"
+   viewBox="0 0 33.94323 33.94323"
+   version="1.1"
+   id="svg1227"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="Aquatool_logo.svg">
+  <defs
+     id="defs1221" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="571.47039"
+     inkscape:cy="-769.5744"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1224">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(174.25809,88.726456)">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.15875001;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect1778"
+       width="33.94323"
+       height="33.94323"
+       x="-174.25809"
+       y="-88.726456" />
+    <path
+       style="fill:#01568c;fill-opacity:1;stroke-width:0.47562939"
+       d="m -163.69744,-59.375872 c -3.95295,-1.5029 -5.30775,-6.243001 -2.70872,-9.477201 0.46134,-0.5741 0.76012,-1.1224 0.66397,-1.2186 -0.0961,-0.096 -1.04401,-0.1748 -2.10633,-0.1748 -1.31328,0 -1.93152,-0.1092 -1.93152,-0.3391 0,-0.3989 8.14935,-15.144301 8.48426,-15.351301 0.24455,-0.1511 1.46241,1.331901 3.95275,4.813501 0.85505,1.1953 1.74542,2.4112 1.97862,2.702 0.2332,0.2907 0.74198,0.9734 1.13064,1.5173 l 0.70664,0.9888 4.16923,0.014 4.16922,0.014 v 6.077202 6.0772 h -4.68014 -4.68012 l 0.087,-1.2013 0.087,-1.2013 3.10926,-0.1414 3.10924,-0.1413 v -3.1093 -3.1092 l -3.92341,-0.1413 -3.9234,-0.1414 -1.94413,-2.8211 c -2.26914,-3.2927 -2.95716,-4.0523 -3.32332,-3.6691 -0.41624,0.4357 -3.13865,5.6565 -3.13865,6.0191 0,0.2293 0.86123,0.3298 2.8266,0.3298 h 2.82659 v 1.6444 1.6445 l -2.23317,0.922 c -3.18344,1.3144 -4.11157,2.5974 -3.41208,4.7168 0.51633,1.5645 1.45566,2.096001 3.70475,2.096001 h 1.9405 v 1.2417 c 0,1.4121 -0.14046,1.5147 -2.35598,1.722599 -0.93048,0.088 -1.86799,-0.019 -2.58513,-0.290899 z"
+       id="path1206"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
