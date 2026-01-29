@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
+import { NotFound } from './pages/NotFound';
 import MaintenanceMode from './Maintenance';
 
 // Component to handle scroll to top on route change
@@ -50,6 +51,7 @@ export default function App() {
         <main style={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
