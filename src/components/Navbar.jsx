@@ -20,13 +20,17 @@ export const Navbar = () => {
         { name: 'Servicios', href: '/#services' },
         { name: 'Investigación', href: '/#research' },
         { name: 'Nosotros', href: '/nosotros' },
-        { name: 'Contacto', href: '/#contact' },
     ];
 
     // Helper to handle hash navigation from other pages
     const handleNavClick = (e, href) => {
         setMobileMenuOpen(false);
-        if (href.startsWith('/#')) {
+        if (href === '/' || href === '/#home') {
+            if (location.pathname === '/') {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        } else if (href.startsWith('/#')) {
             const id = href.replace('/#', '');
             const element = document.getElementById(id);
             if (element) {
@@ -51,9 +55,14 @@ export const Navbar = () => {
                             <Link key={link.name} to={link.href} onClick={(e) => handleNavClick(e, link.href)}>{link.name}</Link>
                         )
                     ))}
-                    <a href="#contact" className="base-btn primary-btn" style={{ padding: '0.6rem 1.2rem', background: '#06b6d4', color: 'white'  }}>
+                    <Link
+                        to="/#contact"
+                        className="base-btn primary-btn"
+                        style={{ padding: '0.6rem 1.2rem', background: '#06b6d4', color: 'white' }}
+                        onClick={(e) => handleNavClick(e, '/#contact')}
+                    >
                         Hablemos
-                    </a>
+                    </Link>
                 </div>
 
                 <button
@@ -82,9 +91,14 @@ export const Navbar = () => {
                                     {link.name}
                                 </Link>
                             ))}
-                            <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="base-btn primary-btn" style={{ background: '#06b6d4', color: 'white' }}>
+                            <Link
+                                to="/#contact"
+                                onClick={(e) => handleNavClick(e, '/#contact')}
+                                className="base-btn primary-btn"
+                                style={{ background: '#06b6d4', color: 'white' }}
+                            >
                                 Contactar
-                            </a>
+                            </Link>
                         </nav>
                     </motion.div>
                 )}
