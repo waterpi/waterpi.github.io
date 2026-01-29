@@ -14,7 +14,10 @@ import {
     Terminal,
     Cpu,
     Database,
-    CloudRain
+    CloudRain,
+    Target,
+    Eye,
+    Compass
 } from 'lucide-react';
 
 const services = [
@@ -117,6 +120,42 @@ const Concept = () => (
     </section>
 );
 
+const MissionVision = () => (
+    <section className="section" style={{ background: 'rgba(6, 182, 212, 0.02)' }}>
+        <div className="container">
+            <div className="grid-3">
+                <div className="card" style={{ border: 'none', background: 'transparent', padding: '1rem' }}>
+                    <div className="icon-box" style={{ background: 'rgba(255,255,255,0.03)' }}>
+                        <Target size={24} />
+                    </div>
+                    <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--accent)' }}>Misión</h3>
+                    <p style={{ color: '#94a3b8', lineHeight: '1.7' }}>
+                        Desarrollar proyectos de ingeniería especializados en Recursos Hídricos y Medio Ambiente, apoyándonos en la creación y aplicación de herramientas innovadoras que optimicen la gestión y conservación de estos recursos.
+                    </p>
+                </div>
+                <div className="card" style={{ border: 'none', background: 'transparent', padding: '1rem' }}>
+                    <div className="icon-box" style={{ background: 'rgba(255,255,255,0.03)' }}>
+                        <Eye size={24} />
+                    </div>
+                    <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--accent)' }}>Visión</h3>
+                    <p style={{ color: '#94a3b8', lineHeight: '1.7' }}>
+                        Impulsar la transformación sostenible en la gestión del agua, integrando tecnología y conocimiento para proteger y restaurar el equilibrio ambiental a largo plazo.
+                    </p>
+                </div>
+                <div className="card" style={{ border: 'none', background: 'transparent', padding: '1rem' }}>
+                    <div className="icon-box" style={{ background: 'rgba(255,255,255,0.03)' }}>
+                        <Compass size={24} />
+                    </div>
+                    <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--accent)' }}>Filosofía</h3>
+                    <p style={{ color: '#94a3b8', lineHeight: '1.7' }}>
+                        Brindar un servicio personalizado y de alta calidad, adaptado a las necesidades específicas de cada cliente, garantizando soluciones efectivas y responsables.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
 const ServicesGrid = () => (
     <section id="services" className="section">
         <div className="container">
@@ -214,6 +253,7 @@ export const Home = () => {
         <>
             <Hero />
             <Concept />
+            <MissionVision />
             <ServicesGrid />
             <Research />
             <GrantSection />
