@@ -6,7 +6,7 @@ export const Footer = () => (
         <div className="container footer-content">
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'inherit' }}>
                 <Logo className="footer-logo" style={{ height: '30px', opacity: 0.5 }} />
-                <p style={{ color: '#64748b', fontSize: '0.75rem' }}>Cooperativa de Trabajo Asociado</p>
+                <p style={{ color: '#64748b', fontSize: '0.75rem' }}>Modelación Hidráulica & Innovación Tecnológica</p>
             </div>
             <div style={{ textAlign: 'right' }}>
                 <p style={{ color: '#64748b', fontSize: '0.8rem' }}>© {new Date().getFullYear()} WaterPi</p>
