@@ -121,12 +121,12 @@ const Concept = () => (
             </div>
             <div className="grid-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))' }}>
                 {[
-                    { icon: <Globe2 />, title: "Water Resources", desc: "Expertos en la gestión integral del ciclo del agua." },
-                    { icon: <Database />, title: "Artificial Intelligence", desc: "Aplicamos algoritmos avanzados y Big Data." },
-                    { icon: <Lightbulb />, title: "Technical Innovation", desc: "Desarrollo de herramientas de vanguardia." },
-                    { icon: <Terminal />, title: "Algorithms", desc: "Programación orientada a la eficiencia hídrica." },
-                    { icon: <Users />, title: "Responsible Projects", desc: "Compromiso social como cooperativa técnica." },
-                    { icon: <Award />, title: "Excellence", desc: "Vinculados a los principales centros de investigación." }
+                    { icon: <Globe2 />, title: "Recursos Hídricos", desc: "Expertos en la gestión integral del ciclo del agua" },
+                    { icon: <Database />, title: "Inteligencia Artificial", desc: "Aplicamos algoritmos avanzados y Big Data" },
+                    { icon: <Lightbulb />, title: "Innovación Técnica", desc: "Desarrollo de herramientas de vanguardia" },
+                    { icon: <Terminal />, title: "Algoritmos", desc: "Programación orientada a la eficiencia hídrica" },
+                    { icon: <Users />, title: "Compromiso Social", desc: "Vinculados a la economía social como cooperativa" },
+                    { icon: <Award />, title: "Excelencia", desc: "Conectados con los principales centros de investigación" }
                 ].map((item, i) => (
                     <div key={i} className="card" style={{ padding: '2rem', textAlign: 'center' }}>
                         <div className="icon-box" style={{ margin: '0 auto 1.5rem' }}>{item.icon}</div>
