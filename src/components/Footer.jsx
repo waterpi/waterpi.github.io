@@ -9,7 +9,7 @@ export const Footer = () => (
                 <p style={{ color: '#64748b', fontSize: '0.75rem' }}>Cooperativa de Trabajo Asociado</p>
             </div>
             <div style={{ textAlign: 'right' }}>
-                <p style={{ color: '#64748b', fontSize: '0.8rem' }}>© {new Date().getFullYear()} WaterPi Consulting</p>
+                <p style={{ color: '#64748b', fontSize: '0.8rem' }}>© {new Date().getFullYear()} WaterPi</p>
             </div>
         </div>
     </footer>
