@@ -49,29 +49,30 @@ const services = [
     {
         icon: <Activity />,
         title: "Abastecimiento & Redes",
-        desc: "Creación de modelos hidráulicos de redes de abastecimiento y saneamiento urbano, integración con Epanet y QGISRed.",
-        tags: ["Epanet-QGISRed", "Drenaje Urbano", "Optimización"]
+        desc: "Creación de modelos hidráulicos de redes de abastecimiento y saneamiento urbano, integración con Epanet, SWMM, WS Pro, ICM y QGISRed.",
+        tags: ["Abastecimiento", "Saneamiento", "Optimización"]
     },
     {
         icon: <Code2 />,
         title: "Programación a Medida",
-        desc: "Desarrollo de software específico (VB.NET, C#, Python, R-Shiny) y hojas de cálculo (VBA) para ingeniería.",
+        desc: "Desarrollo de software específico (.NET, Typescript, Python, Ruby, R-Shiny) y hojas de cálculo (VBA) para ingeniería.",
         tags: ["Plugins QGIS", "Algoritmos", "Software SSD"]
     },
     {
         icon: <Cpu />,
         title: "IA & Big Data",
         desc: "Tratamiento de grandes volúmenes de datos y aplicación de Inteligencia Artificial para la predicción hídrica.",
-        tags: ["Análisis Predictivo", "Innovación", "Datos Mashup"]
+        tags: ["Análisis Predictivo", "Innovación"]
     }
 ];
 
 const projects = [
-    { name: "Qatium", role: "Colaboración Tecnológica", desc: "Desarrollo de plataforma de gestión inteligente del agua." },
-    { name: "AQUATOOL", role: "Desarrollo de Módulos" },
-    { name: "RS MINERVE", role: "Optimización de Algoritmos" },
-    { name: "QGISRed", role: "Complementos de Redes" },
-    { name: "CHJ", role: "Consultoría de Planificación" }
+    { name: "Qatium", role: "Colaboración Tecnológica", years: 6, desc: "Desarrollo de plataforma de gestión inteligente del agua." },
+    { name: "Water4Cast", role: "Modelos de Pronóstico Hidrológico", years: 3 },
+    { name: "QGISRed", role: "Complementos de Redes", years: 4 },
+    { name: "AQUATOOL", role: "Desarrollo de Módulos", years: 6 },
+    { name: "RS MINERVE", role: "Optimización de Algoritmos", years: 3 },
+    { name: "CHJ", role: "Consultoría de Planificación", years: 4 }
 ];
 
 const publications = [
@@ -253,7 +254,7 @@ const ServicesGrid = () => (
     <section id="services" className="section">
         <div className="container">
             <div className="mb-4">
-                <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Servicios y Especialidades</h2>
+                <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Servicios</h2>
                 <p style={{ color: '#94a3b8', fontSize: '1.1rem', maxWidth: '800px' }}>
                     Aportamos soluciones técnicas para organismos públicos y empresas privadas.
                 </p>
@@ -274,12 +275,12 @@ const ServicesGrid = () => (
     </section>
 );
 
-const Research = () => (
-    <section id="research" className="section" style={{ background: 'rgba(6, 182, 212, 0.02)' }}>
+const Portfolio = () => (
+    <section id="portfolio" className="section" style={{ background: 'rgba(6, 182, 212, 0.02)' }}>
         <div className="container">
             <div className="grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem', alignItems: 'start' }}>
                 <div>
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Investigación & Desarrollo</h2>
+                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Portfolio</h2>
                     <p style={{ color: '#94a3b8', fontSize: '1.1rem', marginBottom: '2rem' }}>
                         Nuestra actividad está intrínsecamente ligada a la academia. Colaboramos activamente con el IIAMA y otros centros de referencia internacional.
                     </p>
@@ -297,9 +298,22 @@ const Research = () => (
                         <h3 className="mb-4" style={{ fontSize: '1.25rem' }}>Proyectos Destacados</h3>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                             {projects.map((p, i) => (
-                                <div key={i} style={{ padding: '1rem', background: '#020617', borderRadius: '0.75rem', border: '1px solid var(--border)' }}>
-                                    <div style={{ fontWeight: 'bold', color: 'white', fontSize: '0.9rem' }}>{p.name}</div>
-                                    <div style={{ fontSize: '0.75rem', color: '#64748b' }}>{p.role}</div>
+                                <div key={i} style={{ padding: '1rem', background: '#020617', borderRadius: '0.75rem', border: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                    <div>
+                                        <div style={{ fontWeight: 'bold', color: 'white', fontSize: '0.9rem' }}>{p.name}</div>
+                                        <div style={{ fontSize: '0.75rem', color: '#64748b' }}>{p.role}</div>
+                                    </div>
+                                    <div style={{
+                                        fontSize: '0.7rem',
+                                        padding: '0.2rem 0.6rem',
+                                        background: 'rgba(6, 182, 212, 0.1)',
+                                        color: 'var(--accent)',
+                                        borderRadius: '4px',
+                                        fontWeight: 'bold',
+                                        border: '1px solid rgba(6, 182, 212, 0.2)'
+                                    }}>
+                                        {'>'} {p.years} años
+                                    </div>
                                 </div>
                             ))}
                         </div>
@@ -336,7 +350,7 @@ export const Home = () => {
             <Concept />
             <MissionVision />
             <ServicesGrid />
-            <Research />
+            <Portfolio />
             <TeamSection />
             <AboutSection />
             <Contact />
