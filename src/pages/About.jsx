@@ -2,6 +2,24 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Users, Award, Target, History } from 'lucide-react';
 
+const LinkedinIcon = ({ size = 20 }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+        <rect width="4" height="12" x="2" y="9" />
+        <circle cx="4" cy="4" r="2" />
+    </svg>
+);
+
 export const About = () => {
     return (
         <div style={{ paddingTop: '80px', minHeight: '100vh' }}>
@@ -28,7 +46,7 @@ export const About = () => {
                             <div className="icon-box"><History /></div>
                             <h3>Nuestra Historia</h3>
                             <p style={{ color: '#94a3b8', marginTop: '1rem' }}>
-                                Constituida en 2018, WaterPi surge de la unión de dos ingenieros de caminos apasionados por la hidráulica. Tras años colaborando en proyectos de investigación, decidimos crear una estructura que nos permitiera transferir ese conocimiento a la sociedad.
+                                Constituida en 2018, WaterPi surge de la unión de dos ingenieros de caminos apasionados por la hidráulica y la programación. Tras años colaborando en proyectos de investigación, decidimos crear una estructura que nos permitiera transferir ese conocimiento a la sociedad.
                             </p>
                         </div>
                         <div className="card">
@@ -48,21 +66,23 @@ export const About = () => {
                     <div className="grid-2" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '6rem' }}>
                         <div style={{ textAlign: 'center' }}>
                             <img src="/assets/edgar.jpg" alt="Edgar Belda" style={{ width: '180px', height: '180px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1.5rem' }} />
-                            <h3 style={{ fontSize: '1.8rem', color: 'var(--accent)', marginBottom: '0.5rem' }}>Edgar Belda</h3>
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                                <h3 style={{ fontSize: '1.8rem', color: 'var(--accent)' }}>Edgar Belda</h3>
+                                <a href="https://www.linkedin.com/in/edgarbelda/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', display: 'flex' }}>
+                                    <LinkedinIcon size={20} />
+                                </a>
+                            </div>
                             <p style={{ color: '#17c7d2', fontStyle: 'italic', marginBottom: '1rem' }}>Socio Fundador</p>
-                            <p style={{ marginBottom: '0.5rem' }}>Ingeniero de Caminos Canales y Puertos</p>
-                            <p style={{ marginBottom: '0.5rem' }}>Máster en Ingeniería Hidráulica y Medio Ambiente</p>
-                            <p style={{ marginBottom: '0.5rem' }}>Estudiante de Doctorado en Ingeniería del Agua y Medioambiental</p>
-                            <p>Especialista en calidad de aguas, diseñador y programador</p>
                         </div>
                         <div style={{ textAlign: 'center' }}>
-                            <img src="/assets/nestor.jpg" alt="Néstor Lerma" style={{ width: '180px', height: '180px', borderRadius: '50%', objectFit: 'contain', padding: '10px', marginBottom: '1.5rem', marginTop: '2rem' }} />
-                            <h3 style={{ fontSize: '1.8rem', color: 'var(--accent)', marginBottom: '0.5rem' }}>Néstor Lerma</h3>
+                            <img src="/assets/nestor.jpg" alt="Néstor Lerma" style={{ width: '180px', height: '180px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1.5rem' }} />
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                                <h3 style={{ fontSize: '1.8rem', color: 'var(--accent)' }}>Néstor Lerma</h3>
+                                <a href="https://www.linkedin.com/in/neslerel/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', display: 'flex' }}>
+                                    <LinkedinIcon size={20} />
+                                </a>
+                            </div>
                             <p style={{ color: '#17c7d2', fontStyle: 'italic', marginBottom: '1rem' }}>Socio Fundador</p>
-                            <p style={{ marginBottom: '0.5rem' }}>Ingeniero de Caminos Canales y Puertos</p>
-                            <p style={{ marginBottom: '0.5rem' }}>Máster en Ingeniería Hidráulica y Medio Ambiente</p>
-                            <p style={{ marginBottom: '0.5rem' }}>Doctor en Ingeniería del Agua y Medioambiental</p>
-                            <p>Especialista en programación, hojas de cálculo y calibración de modelos</p>
                         </div>
                     </div>
                 </div>
@@ -72,17 +92,17 @@ export const About = () => {
                 <div className="container">
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
                         <div>
-                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>8 años de experiencia desde 2018</h2>
+                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>15 años de experiencia</h2>
                             <p style={{ color: '#94a3b8', fontSize: '1.1rem', marginBottom: '1.5rem' }}>
                                 A lo largo de estos años, hemos participado en multitud de proyectos de alto nivel, colaborando con administraciones públicas, grandes consultoras y centros de investigación como el IIAMA.
                             </p>
                             <p style={{ color: '#94a3b8', fontSize: '1.1rem' }}>
-                                Nuestra especialización en herramientas como AQUATOOL, EPANET y SWMM nos ha convertido en un socio tecnológico de referencia en el sector del agua en España.
+                                Nuestra especialización en herramientas como EPANET, AQUATOOL y SWMM, entre otros, nos ha convertido en un socio tecnológico de referencia en el sector del agua en España.
                             </p>
                         </div>
                         <div className="card" style={{ padding: '3rem', textAlign: 'center', border: '1px solid var(--accent)' }}>
                             <Award size={48} className="text-cyan" style={{ marginBottom: '1.5rem' }} />
-                            <div style={{ fontSize: '3rem', fontWeight: '800', color: 'white' }}>+8</div>
+                            <div style={{ fontSize: '3rem', fontWeight: '800', color: 'white' }}>+15</div>
                             <div style={{ textTransform: 'uppercase', letterSpacing: '2px', color: '#64748b', fontWeight: 'bold' }}>Años Innovando</div>
                         </div>
                     </div>
