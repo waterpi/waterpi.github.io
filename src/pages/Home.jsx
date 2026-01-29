@@ -70,7 +70,7 @@ const Hero = () => (
                 <span className="badge">Consultoría técnica & Soluciones Digitales</span>
                 <h1>
                     Modelación Hidráulica <br />
-                    <span className="text-gradient">& Ingeniería del Agua</span>
+                    <span className="text-gradient">& Innovación Tecnológica</span>
                 </h1>
                 <p className="hero-p">
                     WaterPi nace para dar respuesta a la creciente demanda de tecnificación en el sector del agua, fusionando la ingeniería tradicional con las tecnologías más innovadoras.
@@ -122,7 +122,7 @@ const ServicesGrid = () => (
         <div className="container">
             <div className="mb-4">
                 <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Servicios y Especialidades</h2>
-                <p style={{ color: '#94a3b8', fontSize: '1.1rem', maxWidth: '600px' }}>
+                <p style={{ color: '#94a3b8', fontSize: '1.1rem', maxWidth: '800px' }}>
                     Aportamos soluciones técnicas para organismos públicos y empresas privadas.
                 </p>
             </div>
@@ -199,7 +199,7 @@ const Contact = () => (
                     Estamos listos para tu próximo reto técnico.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
-                    <a href="mailto:info@waterpi.com" className="base-btn primary-btn" style={{ fontSize: '1.1rem', padding: '1rem 3rem', background: '#06b6d4', color: 'white'  }}>
+                    <a href="mailto:info@waterpi.com" className="base-btn primary-btn" style={{ fontSize: '1.1rem', padding: '1rem 3rem', background: '#06b6d4', color: 'white' }}>
                         <Mail size={22} style={{ marginRight: '0.5rem' }} />
                         info@waterpi.com
                     </a>
