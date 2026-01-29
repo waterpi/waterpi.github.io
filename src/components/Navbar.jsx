@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion as Motion, AnimatePresence } from 'framer-motion';
 import { Logo } from './Logo';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -75,7 +75,7 @@ export const Navbar = () => {
 
             <AnimatePresence>
                 {mobileMenuOpen && (
-                    <motion.div
+                    <Motion.div
                         initial={{ x: '100%' }}
                         animate={{ x: 0 }}
                         exit={{ x: '100%' }}
@@ -100,7 +100,7 @@ export const Navbar = () => {
                                 Contactar
                             </Link>
                         </nav>
-                    </motion.div>
+                    </Motion.div>
                 )}
             </AnimatePresence>
         </nav>

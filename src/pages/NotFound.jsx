@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 import { Home as HomeIcon, AlertCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -13,7 +13,7 @@ export const NotFound = () => {
             textAlign: 'center',
             padding: '2rem'
         }}>
-            <motion.div
+            <Motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
@@ -44,7 +44,7 @@ export const NotFound = () => {
                     <HomeIcon size={18} />
                     Volver al Inicio
                 </Link>
-            </motion.div>
+            </Motion.div>
         </div>
     );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 import {
     Droplets,
     Code2,
@@ -85,7 +85,7 @@ const publications = [
 const Hero = () => (
     <header id="home" className="hero">
         <div className="container">
-            <motion.div
+            <Motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 className="hero-content"
@@ -106,7 +106,7 @@ const Hero = () => (
                         Sobre Nosotros
                     </a>
                 </div>
-            </motion.div>
+            </Motion.div>
         </div>
     </header>
 );
