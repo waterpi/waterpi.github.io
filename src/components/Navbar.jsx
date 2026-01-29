@@ -19,7 +19,7 @@ export const Navbar = () => {
         { name: 'Inicio', href: '/' },
         { name: 'Servicios', href: '/#services' },
         { name: 'Investigación', href: '/#research' },
-        { name: 'Nosotros', href: '/nosotros' },
+        { name: 'Nosotros', href: '/#team' },
     ];
 
     // Helper to handle hash navigation from other pages

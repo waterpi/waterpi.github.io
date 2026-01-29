@@ -17,8 +17,27 @@ import {
     CloudRain,
     Target,
     Eye,
-    Compass
+    Compass,
+    History
 } from 'lucide-react';
+
+const LinkedinIcon = ({ size = 20 }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+        <rect width="4" height="12" x="2" y="9" />
+        <circle cx="4" cy="4" r="2" />
+    </svg>
+);
 
 const services = [
     {
@@ -82,7 +101,7 @@ const Hero = () => (
                     <a href="#services" className="base-btn primary-btn">
                         Ver Servicios <ArrowRight size={16} />
                     </a>
-                    <a href="/nosotros" className="base-btn outline-btn">
+                    <a href="#team" className="base-btn outline-btn">
                         Sobre Nosotros
                     </a>
                 </div>
@@ -156,6 +175,80 @@ const MissionVision = () => (
     </section>
 );
 
+const AboutSection = () => (
+    <section id="about" className="section" style={{ background: 'rgba(6, 182, 212, 0.02)' }}>
+        <div className="container">
+            <div className="grid-2" style={{ alignItems: 'center', gap: '6rem' }}>
+                <div>
+                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Ingeniería con Valor Social</h2>
+                    <p style={{ color: '#94a3b8', fontSize: '1.1rem', lineHeight: '1.8' }}>
+                        WaterPi es una <strong>Cooperativa de Trabajo Asociado</strong> fundada sobre los principios de responsabilidad, excelencia técnica y compromiso con la gestión sostenible del agua.
+                    </p>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                    <div className="card" style={{ padding: '1.5rem', display: 'flex', gap: '1.5rem', alignItems: 'start' }}>
+                        <div className="icon-box" style={{ flexShrink: 0, margin: 0 }}><History /></div>
+                        <div>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>Nuestra Historia</h3>
+                            <p style={{ color: '#94a3b8', fontSize: '0.85rem', lineHeight: '1.6' }}>
+                                Constituida en 2018, surge de la unión de ingenieros apasionados por la hidráulica y la programación para transferir conocimiento a la sociedad.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="card" style={{ padding: '1.5rem', display: 'flex', gap: '1.5rem', alignItems: 'start' }}>
+                        <div className="icon-box" style={{ flexShrink: 0, margin: 0 }}><Target /></div>
+                        <div>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>Misión Cooperativa</h3>
+                            <p style={{ color: '#94a3b8', fontSize: '0.85rem', lineHeight: '1.6' }}>
+                                Priorizamos a las personas, buscando la estabilidad profesional y la creación de valor real para nuestros clientes y el medio ambiente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
+const TeamSection = () => (
+    <section id="team" className="section">
+        <div className="container">
+            <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+                <h2 style={{ fontSize: '2.5rem' }}>Nuestro Equipo</h2>
+            </div>
+            <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+                gap: '8rem',
+                maxWidth: '900px',
+                margin: '0 auto'
+            }}>
+                <div style={{ textAlign: 'center', flex: '1', minWidth: '250px' }}>
+                    <img src="/assets/edgar.jpg" alt="Edgar Belda" style={{ width: '160px', height: '160px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1.5rem', border: '3px solid rgba(6, 182, 212, 0.2)' }} />
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                        <h3 style={{ fontSize: '1.5rem', color: 'var(--accent)' }}>Edgar Belda</h3>
+                        <a href="https://www.linkedin.com/in/edgarbelda/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', display: 'flex' }}>
+                            <LinkedinIcon size={18} />
+                        </a>
+                    </div>
+                    <p style={{ color: '#17c7d2', fontStyle: 'italic', fontSize: '0.9rem' }}>Socio Fundador</p>
+                </div>
+                <div style={{ textAlign: 'center', flex: '1', minWidth: '250px' }}>
+                    <img src="/assets/nestor.jpg" alt="Néstor Lerma" style={{ width: '160px', height: '160px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1.5rem', border: '3px solid rgba(6, 182, 212, 0.2)' }} />
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                        <h3 style={{ fontSize: '1.5rem', color: 'var(--accent)' }}>Néstor Lerma</h3>
+                        <a href="https://www.linkedin.com/in/neslerel/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', display: 'flex' }}>
+                            <LinkedinIcon size={18} />
+                        </a>
+                    </div>
+                    <p style={{ color: '#17c7d2', fontStyle: 'italic', fontSize: '0.9rem' }}>Socio Fundador</p>
+                </div>
+            </div>
+        </div>
+    </section>
+);
+
 const ServicesGrid = () => (
     <section id="services" className="section">
         <div className="container">
@@ -217,18 +310,6 @@ const Research = () => (
     </section>
 );
 
-const GrantSection = () => (
-    <section className="section" style={{ padding: '4rem 0', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-        <div className="container">
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '2rem', opacity: 0.6 }}>
-                <div style={{ fontSize: '0.8rem', color: '#64748b', maxWidth: '500px', textAlign: 'center' }}>
-                    Proyecto subvencionado por la Conselleria de Economía Sostenible, Sectores Productivos, Comercio y Trabajo para el fomento de cooperativas.
-                </div>
-            </div>
-        </div>
-    </section>
-);
-
 const Contact = () => (
     <section id="contact" className="section">
         <div className="container">
@@ -256,7 +337,8 @@ export const Home = () => {
             <MissionVision />
             <ServicesGrid />
             <Research />
-            <GrantSection />
+            <TeamSection />
+            <AboutSection />
             <Contact />
         </>
     );
