@@ -44,11 +44,11 @@ const ProjectCard = ({ project, index }) => {
             paddingTop: index === 0 ? '4rem' : '8rem'
         }}>
             <div className="container">
-                <div style={{
+                <div className="portfolio-grid" style={{
                     display: 'grid',
-                    gridTemplateColumns: project.image ? 'repeat(auto-fit, minmax(400px, 1fr))' : '1fr',
-                    gap: '4rem',
-                    alignItems: 'center'
+                    gridTemplateColumns: project.image ? '1fr 1fr' : '1fr',
+                    gap: '5rem',
+                    alignItems: 'start'
                 }}>
                     {/* Image Section */}
                     {project.image && (
@@ -56,13 +56,21 @@ const ProjectCard = ({ project, index }) => {
                             initial={{ opacity: 0, x: isEven ? -30 : 30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            style={{ order: isEven ? 1 : 2 }}
+                            transition={{ duration: 0.6 }}
+                            style={{
+                                order: isEven ? 1 : 2,
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center'
+                            }}
                         >
                             <div style={{
                                 borderRadius: '1.5rem',
                                 overflow: 'hidden',
                                 border: '1px solid var(--border)',
-                                boxShadow: '0 20px 60px rgba(0, 0, 0, 0.5)'
+                                boxShadow: '0 20px 60px rgba(0, 0, 0, 0.5)',
+                                width: '100%',
+                                maxWidth: '600px'
                             }}>
                                 <img
                                     src={project.image}
@@ -70,7 +78,8 @@ const ProjectCard = ({ project, index }) => {
                                     style={{
                                         width: '100%',
                                         height: 'auto',
-                                        display: 'block'
+                                        display: 'block',
+                                        objectFit: 'cover'
                                     }}
                                 />
                             </div>
@@ -82,12 +91,19 @@ const ProjectCard = ({ project, index }) => {
                         initial={{ opacity: 0, x: isEven ? 30 : -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        style={{ order: isEven ? 2 : 1 }}
+                        transition={{ duration: 0.6 }}
+                        style={{
+                            order: isEven ? 2 : 1,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'center'
+                        }}
                     >
                         <h2 style={{
                             fontSize: '2.5rem',
                             marginBottom: '1rem',
-                            color: 'var(--accent)'
+                            color: 'var(--accent)',
+                            lineHeight: '1.2'
                         }}>
                             {project.title}
                         </h2>
@@ -101,7 +117,8 @@ const ProjectCard = ({ project, index }) => {
                                 borderRadius: '0.5rem',
                                 marginBottom: '1.5rem',
                                 fontSize: '0.9rem',
-                                fontWeight: '600'
+                                fontWeight: '600',
+                                width: 'fit-content'
                             }}>
                                 Duración: {project.duration}
                             </div>
@@ -111,7 +128,7 @@ const ProjectCard = ({ project, index }) => {
                             <div style={{ marginBottom: '1.5rem' }}>
                                 <span style={{
                                     color: '#94a3b8',
-                                    fontSize: '0.9rem',
+                                    fontSize: '0.85rem',
                                     fontWeight: '600',
                                     textTransform: 'uppercase',
                                     letterSpacing: '0.05em'
@@ -119,9 +136,10 @@ const ProjectCard = ({ project, index }) => {
                                     Rol:
                                 </span>
                                 <p style={{
-                                    color: 'white',
-                                    fontSize: '1.1rem',
-                                    marginTop: '0.5rem'
+                                    color: '#cbd5e1',
+                                    fontSize: '1rem',
+                                    marginTop: '0.5rem',
+                                    lineHeight: '1.7'
                                 }}>
                                     {project.role}
                                 </p>
@@ -141,7 +159,8 @@ const ProjectCard = ({ project, index }) => {
                                     <p key={i} style={{
                                         color: '#94a3b8',
                                         lineHeight: '1.8',
-                                        marginBottom: '1rem'
+                                        marginBottom: '1rem',
+                                        fontSize: '0.95rem'
                                     }}>
                                         {desc}
                                     </p>
@@ -149,7 +168,8 @@ const ProjectCard = ({ project, index }) => {
                             ) : (
                                 <p style={{
                                     color: '#94a3b8',
-                                    lineHeight: '1.8'
+                                    lineHeight: '1.8',
+                                    fontSize: '0.95rem'
                                 }}>
                                     {project.description}
                                 </p>
@@ -187,7 +207,8 @@ const ProjectCard = ({ project, index }) => {
                                             />
                                             <span style={{
                                                 color: '#cbd5e1',
-                                                lineHeight: '1.6'
+                                                lineHeight: '1.6',
+                                                fontSize: '0.9rem'
                                             }}>
                                                 {contrib}
                                             </span>
@@ -235,7 +256,8 @@ const ProjectCard = ({ project, index }) => {
                                 style={{
                                     display: 'inline-flex',
                                     alignItems: 'center',
-                                    gap: '0.5rem'
+                                    gap: '0.5rem',
+                                    width: 'fit-content'
                                 }}
                             >
                                 Más información

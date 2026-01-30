@@ -316,3 +316,15 @@ h1 {
 .text-cyan {
   color: var(--accent);
 }
+
+/* Portfolio Page Responsive */
+@media (max-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+  
+  .portfolio-grid > * {
+    order: 1 !important;
+  }
+}
