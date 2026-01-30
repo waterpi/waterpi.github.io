@@ -99,7 +99,7 @@ const Hero = () => (
                     <span className="text-gradient">& Innovación Tecnológica</span>
                 </h1>
                 <p className="hero-p">
-                    WaterPi nace para dar respuesta a la creciente demanda de tecnificación en el sector del agua, fusionando la ingeniería tradicional con las tecnologías más innovadoras.
+                    WaterPi nace para dar respuesta a la creciente demanda de digitalización en el sector del agua, fusionando la ingeniería tradicional con las tecnologías más innovadoras.
                 </p>
                 <div className="btn-group">
                     <a href="#services" className="base-btn primary-btn">
