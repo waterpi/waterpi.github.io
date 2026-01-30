@@ -33,12 +33,12 @@ const AnimatedBackground = () => {
       style={{
         position: 'absolute',
         top: '50%',
-        left: '40%',
+        left: '45%',
         transform: 'translate(-50%, -50%)',
         width: '1200px',
-        height: '1200px',
+        height: '1400px',
         zIndex: -1,
-        opacity: 0.7,
+        opacity: 0.5,
         filter: 'drop-shadow(0 0 30px rgba(100, 200, 255, 0.5))',
       }}
     >
