@@ -1,11 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { Portfolio } from './pages/Portfolio';
 import { NotFound } from './pages/NotFound';
 import MaintenanceMode from './Maintenance';
+
+// Component to handle GitHub Pages SPA redirect
+const RedirectHandler = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const p = params.get('p');
+    if (p) {
+      navigate('/' + p, { replace: true });
+    }
+  }, [navigate]);
+
+  return null;
+};
 
 // Component to handle scroll to top on route change
 const ScrollToTop = () => {
@@ -19,7 +34,7 @@ const ScrollToTop = () => {
   }, [pathname]);
 
   return null;
-}
+};
 
 export default function App() {
   const [isMaintenance] = useState(() => {
@@ -44,6 +59,7 @@ export default function App() {
 
   return (
     <Router>
+      <RedirectHandler />
       <ScrollToTop />
       <div className="app-container" style={{ background: '#020617', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <Navbar />
