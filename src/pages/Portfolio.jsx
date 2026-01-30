@@ -23,7 +23,6 @@ const PortfolioHero = () => (
                 animate={{ opacity: 1, y: 0 }}
                 className="hero-content"
             >
-                <span className="badge">Nuestros Proyectos</span>
                 <h1>
                     Portfolio
                 </h1>
@@ -218,6 +217,48 @@ const ProjectCard = ({ project, index }) => {
                             </div>
                         )}
 
+                        {project.works && (
+                            <div style={{ marginBottom: '2rem' }}>
+                                <h3 style={{
+                                    fontSize: '1.2rem',
+                                    marginBottom: '1rem',
+                                    color: 'white'
+                                }}>
+                                    Trabajos Realizados
+                                </h3>
+                                <ul style={{
+                                    listStyle: 'none',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    gap: '0.75rem'
+                                }}>
+                                    {project.works.map((work, i) => (
+                                        <li key={i} style={{
+                                            display: 'flex',
+                                            alignItems: 'start',
+                                            gap: '0.75rem'
+                                        }}>
+                                            <ArrowRight
+                                                size={18}
+                                                style={{
+                                                    color: 'var(--accent)',
+                                                    flexShrink: 0,
+                                                    marginTop: '0.25rem'
+                                                }}
+                                            />
+                                            <span style={{
+                                                color: '#cbd5e1',
+                                                lineHeight: '1.6',
+                                                fontSize: '0.9rem'
+                                            }}>
+                                                {work}
+                                            </span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+
                         {project.technologies && (
                             <div style={{ marginBottom: '2rem' }}>
                                 <h3 style={{
@@ -314,7 +355,7 @@ export const Portfolio = () => {
             technologies: [
                 'HTML', 'CSS', 'TypeScript', 'OpenStreetMaps'
             ],
-            link: 'https://water4cast.com',
+            link: 'https://water4cast.webs.upv.es',
             image: '/assets/water4cast.jpg'
         },
         {
@@ -341,11 +382,37 @@ export const Portfolio = () => {
                 'Desarrollo Avanzado de Herramientas de Modelización: Colaboramos en el desarrollo continuo de los módulos de cálculo de Aquatool, incluyendo las principales herramientas de simulación, además de otras herramientas secundarias clave como EvalHid, Caudeco, AqtPlayer, RREA y Mashwin.',
                 'Formación y Transferencia de Conocimiento: Impartimos cursos internacionales especializados dirigidos a ingenieros, gestores y académicos, cubriendo desde el uso avanzado de los módulos SIMGES y GESCAL hasta los principios teóricos subyacentes en la modelización hidráulica y la gestión integrada de recursos hídricos (GIRH).'
             ],
+            works: [
+                'Junta Central (JC) de Usuarios del Alto Vinalopó: Modelación de alternativas para el suministro de caudal a los regantes de la JC, enmarcado dentro del Plan Hidrológico del Júcar.',
+                'Regantes del Alto Vinalopó: Modelo de gestión incluyendo todos los acuíferos, enmarcado dentro del Plan Hidrológico del Júcar.',
+                'Ministerio del Medio Ambiente de El Salvador: Curso online sobre el software.',
+                'TYPSA: Calibración de modelos de calidad con diferentes contaminantes.'
+            ],
             technologies: [
                 'C#', 'VB.NET', 'Windows Forms', 'XAML', 'VBA', 'DotSpatial'
             ],
             link: 'https://aquatool.webs.upv.es',
             image: '/assets/aquatool.png'
+        },
+        {
+            title: 'Aquarius',
+            role: 'Investigador, desarrollador y un híbrido entre ingeniero de producto y programador.',
+            description: [
+                'Desarrollo de una suite de herramientas orientadas a integrar, limpiar, gestionar y exportar datos para el software AQUARIUS. Las soluciones están diseñadas para automatizar flujos de trabajo de campo y de control de calidad, garantizando trazabilidad y reversibilidad en todas las operaciones.'
+            ],
+            contributions: [
+                'Importadores y Parsers: Desarrollo de conectores para archivos Kisters (AQ_Kisters) e importación masiva de localizaciones desde CSV con validaciones geográficas y de metadatos (AQ_CreateLocations).',
+                'Gestión de Visitas: Herramientas para crear, actualizar, validar y eliminar visitas/inspecciones en lote, con soporte import/export y modo dry-run (AQ_Visits, AQ_DeleteVisits).',
+                'Series Temporales: Modificación en lote de parámetros de series temporales con preview y opciones de rollback (AQ_CreateTimeSeriesData).',
+                'Exportación y Reporting: Exportador de datos a formatos estándar (CSV/Excel) y generador automático de informes técnicos (PDF/HTML) a partir de ficheros de aforos con plantillas configurables (AQ_ExportData, AQ_Reports).',
+                'Buenas Prácticas: Validaciones automáticas, auditoría y logs, modo simulación (dry-run), capacidad de rollback y arquitectura modular para integrarse en pipelines de datos.'
+            ],
+            technologies: [
+                'C#', '.NET', 'CSV Parsing', 'AQUARIUS API/SDK', 'HTML/PDF Generation',
+                'Excel Export', 'CLI Tools', 'Logging & Auditing'
+            ],
+            link: 'https://aquaticinformatics.com/products/aquarius-environmental-water-data-management/',
+            image: '/assets/aquarius.png'
         }
     ];
 
