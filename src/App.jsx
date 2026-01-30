@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
+import { Portfolio } from './pages/Portfolio';
 import { NotFound } from './pages/NotFound';
 import MaintenanceMode from './Maintenance';
 
@@ -49,6 +50,7 @@ export default function App() {
         <main style={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
