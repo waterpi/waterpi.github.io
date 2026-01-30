@@ -22,6 +22,21 @@ export const Navbar = () => {
         { name: 'Nosotros', href: '/#team' },
     ];
 
+    // Handle hash navigation after route change
+    useEffect(() => {
+        const hash = window.location.hash;
+        if (hash && location.pathname === '/') {
+            // Small delay to ensure DOM is ready
+            setTimeout(() => {
+                const id = hash.replace('#', '');
+                const element = document.getElementById(id);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
+    }, [location]);
+
     // Helper to handle hash navigation from other pages
     const handleNavClick = (e, href) => {
         setMobileMenuOpen(false);
@@ -31,12 +46,17 @@ export const Navbar = () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         } else if (href.startsWith('/#')) {
-            const id = href.replace('/#', '');
-            const element = document.getElementById(id);
-            if (element) {
+            // If we're already on home page, scroll directly
+            if (location.pathname === '/') {
                 e.preventDefault();
-                element.scrollIntoView({ behavior: 'smooth' });
+                const id = href.replace('/#', '');
+                const element = document.getElementById(id);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
             }
+            // If we're on another page, let React Router navigate
+            // The useEffect above will handle the scrolling after navigation
         }
     };
 
