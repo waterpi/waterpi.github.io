@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion as Motion } from 'framer-motion';
+import AnimatedBackground from '../components/AnimatedBackground';
 import {
     Droplets,
     Code2,
@@ -84,7 +85,8 @@ const publications = [
 ];
 
 const Hero = () => (
-    <header id="home" className="hero">
+    <header id="home" className="hero" style={{ position: 'relative', overflow: 'hidden' }}>
+        <AnimatedBackground />
         <div className="container">
             <Motion.div
                 initial={{ opacity: 0, y: 30 }}

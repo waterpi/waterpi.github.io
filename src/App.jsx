@@ -61,7 +61,7 @@ export default function App() {
     <Router>
       <RedirectHandler />
       <ScrollToTop />
-      <div className="app-container" style={{ background: '#020617', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <div className="app-container" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <Navbar />
         <main style={{ flex: 1 }}>
           <Routes>
