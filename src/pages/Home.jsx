@@ -115,9 +115,9 @@ const Hero = () => (
 );
 
 const Concept = () => (
-    <section id="concept" className="section" style={{ background: 'rgba(2, 6, 23, 0.5)' }}>
+    <section id="concept" className="section" style={{ background: 'rgba(15, 23, 42, 0.6)' }}>
         <div className="container">
-            <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+            <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>El Concepto WaterPi</h2>
                 <p style={{ color: '#94a3b8', maxWidth: '700px', margin: '0 auto' }}>
                     Nuestro nombre refleja nuestra identidad: la intersección perfecta entre el recurso hídrico y la capacidad analítica.
@@ -144,7 +144,7 @@ const Concept = () => (
 );
 
 const MissionVision = () => (
-    <section className="section" style={{ background: 'rgba(6, 182, 212, 0.02)' }}>
+    <section className="section">
         <div className="container">
             <div className="grid-3">
                 <div className="card" style={{ border: 'none', background: 'transparent', padding: '1rem' }}>
@@ -180,9 +180,9 @@ const MissionVision = () => (
 );
 
 const AboutSection = () => (
-    <section id="about" className="section" style={{ background: 'rgba(6, 182, 212, 0.02)' }}>
+    <section id="about" className="section">
         <div className="container">
-            <div className="grid-2" style={{ alignItems: 'center', gap: '6rem' }}>
+            <div className="grid-2" style={{ alignItems: 'center', gap: '4rem' }}>
                 <div>
                     <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Ingeniería con Valor Social</h2>
                     <p style={{ color: '#94a3b8', fontSize: '1.1rem', lineHeight: '1.8' }}>
@@ -215,16 +215,16 @@ const AboutSection = () => (
 );
 
 const TeamSection = () => (
-    <section id="team" className="section">
+    <section id="team" className="section" style={{ background: 'rgba(15, 23, 42, 0.6)' }}>
         <div className="container">
-            <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+            <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <h2 style={{ fontSize: '2.5rem' }}>Nuestro Equipo</h2>
             </div>
             <div style={{
                 display: 'flex',
                 flexWrap: 'wrap',
                 justifyContent: 'center',
-                gap: '8rem',
+                gap: '4rem',
                 maxWidth: '900px',
                 margin: '0 auto'
             }}>
@@ -254,7 +254,7 @@ const TeamSection = () => (
 );
 
 const ServicesGrid = () => (
-    <section id="services" className="section">
+    <section id="services" className="section" style={{ background: 'rgba(15, 23, 42, 0.6)' }}>
         <div className="container">
             <div className="mb-4">
                 <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Servicios</h2>
@@ -279,7 +279,7 @@ const ServicesGrid = () => (
 );
 
 const Portfolio = () => (
-    <section id="portfolio" className="section" style={{ background: 'rgba(6, 182, 212, 0.02)' }}>
+    <section id="portfolio" className="section">
         <div className="container">
             <div className="grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '4rem', alignItems: 'start' }}>
                 <div>
@@ -323,7 +323,7 @@ const Portfolio = () => (
                     </div>
                 </div>
             </div>
-            <div style={{ textAlign: 'center', marginTop: '4rem' }}>
+            <div style={{ textAlign: 'center', marginTop: '3rem' }}>
                 <Link
                     to="/portfolio"
                     className="base-btn primary-btn"
@@ -344,19 +344,17 @@ const Portfolio = () => (
 );
 
 const Contact = () => (
-    <section id="contact" className="section">
+    <section id="contact" className="section" style={{ background: 'rgba(15, 23, 42, 0.6)', textAlign: 'center' }}>
         <div className="container">
-            <div className="card" style={{ padding: '4rem', textAlign: 'center', background: 'rgba(6, 182, 212, 0.05)', border: '1px solid rgba(6, 182, 212, 0.2)' }}>
-                <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>¿Hablamos de agua?</h2>
-                <p style={{ marginBottom: '2.5rem', fontSize: '1.2rem', color: '#94a3b8' }}>
-                    Estamos listos para tu próximo reto técnico.
-                </p>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
-                    <a href="mailto:info@waterpi.com" className="base-btn primary-btn" style={{ fontSize: '1.1rem', padding: '1rem 3rem', background: '#06b6d4', color: 'white' }}>
-                        <Mail size={22} style={{ marginRight: '0.5rem' }} />
-                        info@waterpi.com
-                    </a>
-                </div>
+            <h2 style={{ fontSize: '3.5rem', marginBottom: '1.5rem' }}>¿Hablamos de agua?</h2>
+            <p style={{ marginBottom: '3rem', fontSize: '1.25rem', color: '#94a3b8', maxWidth: '700px', margin: '0 auto 3rem' }}>
+                Estamos listos para tu próximo reto técnico.
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
+                <a href="mailto:info@waterpi.com" className="base-btn primary-btn" style={{ fontSize: '1.1rem', padding: '1rem 3.5rem' }}>
+                    <Mail size={22} style={{ marginRight: '0.75rem' }} />
+                    info@waterpi.com
+                </a>
             </div>
         </div>
     </section>

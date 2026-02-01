@@ -16,7 +16,7 @@ import {
 } from 'lucide-react';
 
 const PortfolioHero = () => (
-    <header className="hero" style={{ minHeight: '60vh' }}>
+    <header className="hero" style={{ minHeight: '50vh' }}>
         <div className="container">
             <Motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -39,8 +39,8 @@ const ProjectCard = ({ project, index }) => {
 
     return (
         <section className="section" style={{
-            background: isEven ? 'rgba(2, 6, 23, 0.5)' : 'rgba(6, 182, 212, 0.02)',
-            paddingTop: index === 0 ? '4rem' : '8rem'
+            background: isEven ? 'transparent' : 'rgba(15, 23, 42, 0.6)',
+            padding: '4rem 0'
         }}>
             <div className="container">
                 <div className="portfolio-grid" style={{

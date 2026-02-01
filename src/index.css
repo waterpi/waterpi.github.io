@@ -82,7 +82,7 @@ body {
 
 /* Hero */
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -168,7 +168,7 @@ h1 {
 
 /* Services Grid */
 .section {
-  padding: 8rem 0;
+  padding: 5rem 0;
 }
 
 .grid-3 {
@@ -278,7 +278,7 @@ h1 {
   }
 
   .section {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 
   .footer-content {
@@ -323,8 +323,8 @@ h1 {
     grid-template-columns: 1fr !important;
     gap: 3rem !important;
   }
-  
-  .portfolio-grid > * {
+
+  .portfolio-grid>* {
     order: 1 !important;
   }
 }
