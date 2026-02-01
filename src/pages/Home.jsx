@@ -93,7 +93,6 @@ const Hero = () => (
                 animate={{ opacity: 1, y: 0 }}
                 className="hero-content"
             >
-                <span className="badge">Consultoría técnica & Soluciones Digitales</span>
                 <h1>
                     Modelación Hidráulica <br />
                     <span className="text-gradient">& Innovación Tecnológica</span>
