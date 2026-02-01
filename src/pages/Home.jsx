@@ -115,7 +115,7 @@ const Hero = () => (
 );
 
 const Concept = () => (
-    <section id="concept" className="section" style={{ background: 'rgba(15, 23, 42, 0.6)' }}>
+    <section id="concept" className="section" style={{ background: 'rgba(6, 182, 212, 0.2)' }}>
         <div className="container">
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>El Concepto WaterPi</h2>
@@ -215,7 +215,7 @@ const AboutSection = () => (
 );
 
 const TeamSection = () => (
-    <section id="team" className="section" style={{ background: 'rgba(15, 23, 42, 0.6)' }}>
+    <section id="team" className="section" style={{ background: 'rgba(6, 182, 212, 0.2)' }}>
         <div className="container">
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <h2 style={{ fontSize: '2.5rem' }}>Nuestro Equipo</h2>
@@ -254,7 +254,7 @@ const TeamSection = () => (
 );
 
 const ServicesGrid = () => (
-    <section id="services" className="section" style={{ background: 'rgba(15, 23, 42, 0.6)' }}>
+    <section id="services" className="section" style={{ background: 'rgba(6, 182, 212, 0.2)' }}>
         <div className="container">
             <div className="mb-4">
                 <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Servicios</h2>
@@ -344,7 +344,7 @@ const Portfolio = () => (
 );
 
 const Contact = () => (
-    <section id="contact" className="section" style={{ background: 'rgba(15, 23, 42, 0.6)', textAlign: 'center' }}>
+    <section id="contact" className="section" style={{ background: 'rgba(6, 182, 212, 0.2)', textAlign: 'center' }}>
         <div className="container">
             <h2 style={{ fontSize: '3.5rem', marginBottom: '1.5rem' }}>¿Hablamos de agua?</h2>
             <p style={{ marginBottom: '3rem', fontSize: '1.25rem', color: '#94a3b8', maxWidth: '700px', margin: '0 auto 3rem' }}>

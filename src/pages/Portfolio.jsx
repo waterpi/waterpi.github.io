@@ -39,7 +39,7 @@ const ProjectCard = ({ project, index }) => {
 
     return (
         <section className="section" style={{
-            background: isEven ? 'transparent' : 'rgba(15, 23, 42, 0.6)',
+            background: isEven ? 'transparent' : 'rgba(6, 182, 212, 0.2)',
             padding: '4rem 0'
         }}>
             <div className="container">
