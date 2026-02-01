@@ -117,7 +117,7 @@ export const Navbar = () => {
                                 className="base-btn primary-btn"
                                 style={{ background: '#06b6d4', color: 'white' }}
                             >
-                                Contactar
+                                Hablemos
                             </Link>
                         </nav>
                     </Motion.div>
