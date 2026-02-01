@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { Portfolio } from './pages/Portfolio';
 import { NotFound } from './pages/NotFound';
-import MaintenanceMode from './Maintenance';
 
 // Component to handle GitHub Pages SPA redirect
 const RedirectHandler = () => {
@@ -37,26 +36,6 @@ const ScrollToTop = () => {
 };
 
 export default function App() {
-  const [isMaintenance] = useState(() => {
-    const params = new URLSearchParams(window.location.search);
-    const previewMode = params.get('preview') === 'true';
-    const storedPreview = localStorage.getItem('waterpi_preview') === 'true';
-
-    if (previewMode) {
-      localStorage.setItem('waterpi_preview', 'true');
-      return false;
-    }
-    return !storedPreview;
-  });
-
-  useEffect(() => {
-    // Feature Flag Logic handled in initializer
-  }, []);
-
-  if (isMaintenance) {
-    return <MaintenanceMode />;
-  }
-
   return (
     <Router>
       <RedirectHandler />
