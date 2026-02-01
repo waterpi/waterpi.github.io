@@ -16,19 +16,46 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
 body {
   background-color: var(--bg-dark);
   color: var(--text-primary);
   line-height: 1.5;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Evitar que max-width afecte a elementos de fondo absoluto */
+.hero img,
+.hero svg {
+  max-width: none;
+}
+
+.hero .container img,
+.hero .container svg {
+  max-width: 100%;
 }
 
 /* Layout Containers */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 /* Navbar */
@@ -177,6 +204,13 @@ h1 {
   gap: 2rem;
 }
 
+.grid-2,
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
 .card {
   background: var(--bg-card);
   padding: 2.5rem;
@@ -289,6 +323,36 @@ h1 {
 
   .footer-logo {
     margin: 0 auto;
+  }
+
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .base-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .btn-group {
+    flex-direction: column;
   }
 }
 

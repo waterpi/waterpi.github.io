@@ -45,8 +45,7 @@ const ProjectCard = ({ project, index }) => {
             <div className="container">
                 <div className="portfolio-grid" style={{
                     display: 'grid',
-                    gridTemplateColumns: project.image ? '1fr 1fr' : '1fr',
-                    gap: '5rem',
+                    gap: '3rem',
                     alignItems: 'start'
                 }}>
                     {/* Image Section */}
