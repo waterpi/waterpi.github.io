@@ -270,11 +270,14 @@ h1 {
   right: 0;
   bottom: 0;
   width: 280px;
+  height: 100dvh;
   background: #020617;
   border-left: 1px solid var(--border);
   padding: 100px 40px;
   z-index: 1500;
   box-shadow: -10px 0 40px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-nav-links {
@@ -295,6 +298,13 @@ h1 {
 
 .mobile-nav-links a:hover {
   color: var(--accent);
+}
+
+@media (max-width: 480px) {
+  .mobile-drawer {
+    width: 100%;
+    padding: 100px 30px;
+  }
 }
 
 /* Mobile */
