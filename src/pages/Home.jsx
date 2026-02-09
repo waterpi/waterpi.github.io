@@ -238,7 +238,7 @@ const TeamSection = () => (
                     <p style={{ color: '#17c7d2', fontStyle: 'italic', fontSize: '0.9rem' }}>Socio Fundador</p>
                 </div>
                 <div style={{ textAlign: 'center', flex: '1', minWidth: '250px' }}>
-                    <img src="/assets/nestor.jpg" alt="Néstor Lerma" style={{ width: '160px', height: '160px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1.5rem', border: '3px solid rgba(6, 182, 212, 0.2)' }} />
+                    <img src="/assets/nestor.png" alt="Néstor Lerma" style={{ width: '160px', height: '160px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1.5rem', border: '3px solid rgba(6, 182, 212, 0.2)' }} />
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
                         <h3 style={{ fontSize: '1.5rem', color: 'var(--accent)' }}>Néstor Lerma</h3>
                         <a href="https://www.linkedin.com/in/neslerel/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', display: 'flex' }}>
