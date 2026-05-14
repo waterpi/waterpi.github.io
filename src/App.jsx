@@ -1,10 +1,6 @@
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
-import { Navbar } from './components/Navbar';
-import { Footer } from './components/Footer';
-import { Home } from './pages/Home';
-import { Portfolio } from './pages/Portfolio';
-import { NotFound } from './pages/NotFound';
+import { Maintenance } from './pages/Maintenance';
 
 // Component to handle GitHub Pages SPA redirect
 const RedirectHandler = () => {
@@ -41,15 +37,11 @@ export default function App() {
       <RedirectHandler />
       <ScrollToTop />
       <div className="app-container" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-        <Navbar />
         <main style={{ flex: 1 }}>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<Maintenance />} />
           </Routes>
         </main>
-        <Footer />
       </div>
     </Router>
   );
